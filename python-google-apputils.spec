@@ -45,15 +45,12 @@ Google.
 %{__sed} -i -e '/ez_setup/d' setup.py
 
 %build
-%{__python} setup.py build %{?with_tests:test}
+%py_build %{?with_tests:test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--skip-build \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py_install
 
 %py_postclean
 
