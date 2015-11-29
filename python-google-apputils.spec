@@ -19,7 +19,7 @@ BuildRequires:	python-modules >= 2
 BuildRequires:	python-pytz >= 2010
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	sed >= 4.0
 Requires:	python-dateutil >= 1.4
 Requires:	python-gflags >= 1.4
